@@ -1,4 +1,4 @@
-.container-around {
+.container__around {
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding-left: 2rem;
@@ -6,4 +6,34 @@
   display: grid;
   grid-template-rows: auto;
   grid-row-gap: 2rem;
+}
+
+.full__height {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loginForm__wrapper {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  border: 1px solid #cccccc;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+}
+
+.loginForm__wrapper input {
+  margin-bottom: 1rem;
+}
+
+.loginForm__wrapper button {
+  margin-top: 0.75rem;
+  width: 100%;
+}
+
+.Toastify__toast-body {
+  width: 100%;
 }

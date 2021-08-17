@@ -1,6 +1,10 @@
 import Button from "react-bootstrap/Button";
 
-const index = (props) => {
-  return <Button variant={props.color}>{props.text}</Button>;
+const index = ({ color, text, onClick }) => {
+  return (
+    <Button variant={color} onClick={onClick}>
+      {text}
+    </Button>
+  );
 };
 export default index;

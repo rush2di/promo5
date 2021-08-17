@@ -1,19 +1,27 @@
-import Form from "react-bootstrap/Form";
+import { Form } from "react-bootstrap";
 import { inputProps } from "../../constants";
 
 const { defaults } = inputProps;
 
 const CustomInput = ({
   label = defaults.label,
-  placeholder = defaults.placeholder
+  placeholder = defaults.placeholder,
+  type = defaults.type,
+  name = defaults.name,
+  value,
+  onChange
 }) => {
   return (
-    <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>{label}</Form.Label>
-        <Form.Control type="email" placeholder={placeholder} />
-      </Form.Group>
-    </Form>
+    <>
+      <Form.Label>{label}</Form.Label>
+      <Form.Control
+        type={type}
+        placeholder={placeholder}
+        name={name}
+        onChange={onChange}
+        value={value}
+      />
+    </>
   );
 };
 

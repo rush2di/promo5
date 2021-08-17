@@ -1,13 +1,10 @@
-import CardsContainer from "./containers/home/cardsContainer";
-import InputsContainer from "./containers/home/inputsContainer";
+import LoginContainer from "./containers/home/loginContainer";
 import "./app.css";
 
 const App = () => {
   return (
-    <div className="container-around">
-      <InputsContainer />
-      <hr></hr>
-      <CardsContainer />
+    <div className="container__around full__height">
+      <LoginContainer />
     </div>
   );
 };

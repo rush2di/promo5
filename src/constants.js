@@ -16,6 +16,7 @@ export const bootstrapButtonVariant = {
 };
 
 export const buttonTexts = {
+  login: "Login",
   danger: "Lorem ipsum",
   success: "Lorem ipsum",
   outlineWarning: "lorem ipsum"
@@ -24,15 +25,21 @@ export const buttonTexts = {
 export const inputProps = {
   defaults: {
     placeholder: "example text here...",
-    label: "Example"
+    label: "Example",
+    type: "text",
+    name: "default"
   },
   email: {
     label: "Email",
-    placeholder: "Write your Email here..."
+    placeholder: "Write your Email here...",
+    type: "email",
+    name: "email"
   },
   password: {
     label: "Password",
-    placeholder: "Write your password here..."
+    placeholder: "Write your password here...",
+    type: "password",
+    name: "password"
   }
 };
 
@@ -58,4 +65,16 @@ export const cardProps = {
       "https://www.jaguarlandrover-cotedazur.com/blog/wp-content/uploads/2020/06/post_SVR-1440x780.jpg",
     theme: "dark"
   }
+};
+
+export const loginInfo = {
+  correctEmail: "3wa@example.com",
+  correctPass: "3waexamplepass"
+};
+
+export const loginValidationText = {
+  short_pass: "password to short",
+  incorrect_pass: "incorrect password",
+  incorrect_email: "incorrect email",
+  success: "successful login"
 };
